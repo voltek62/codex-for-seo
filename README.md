@@ -33,10 +33,14 @@ pip install -r requirements.txt
 
  ~/.streamlit/secrets.toml by default the file doesn’t exist, you have to create it if you want to overrite default config.
  
- open .streamlit/secrets.toml, and add this two following lines
+ - Open .streamlit/secrets.toml, and add this two following lines
+ 
  ---
+ 
  API_TOKEN = "YOUROPENAPIKEY"
+ 
  API_TOKEN2 = "YOUROPENHUGGINGFACEKEY"
+ 
  ---
 
 ## Run streamlit
