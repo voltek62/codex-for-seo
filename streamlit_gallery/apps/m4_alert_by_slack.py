@@ -55,7 +55,7 @@ def _get_session():
 
 
 
-def completion(prompt, engine_id="code-davinci-001", debug=False, **kwargs):
+def completion(prompt, engine_id="code-davinci-002", debug=False, **kwargs):
 
     COMPLETION_ENDPOINT = (
         "https://api.openai.com/v1/engines/{engine_id}/completions".format(

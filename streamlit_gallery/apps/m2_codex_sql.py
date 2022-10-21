@@ -33,7 +33,7 @@ def openai_call(prompt: str, stop: str = None) -> str:
     uniqueID = _get_session()
     
     kwargs = {
-        "engine": "code-davinci-001",
+        "engine": "code-davinci-002",
         "prompt": prompt,
         "max_tokens": 64,
         "temperature": 0,
