@@ -70,9 +70,14 @@ def completion(prompt, engine_id="code-davinci-002", debug=False, **kwargs):
     
     # Pass a uniqueID for every user w/ each API call (both for Completion & the Content Filter) e.g. user= $uniqueID. 
     # This 'user' param can be passed in the request body along with other params such as prompt, max_tokens etc.
-    uniqueID = _get_session()    
+    #uniqueID = _get_session()    
 
-    data = {"prompt": prompt, "max_tokens": 200, "temperature": 0, "stop": ["# 4."], "user": uniqueID}
+    data = {"prompt": prompt, 
+    "max_tokens": 200, 
+    "temperature": 0, 
+    "stop": ["# 4."]
+    #"user": uniqueID,
+    }
 
     data.update(kwargs)
 

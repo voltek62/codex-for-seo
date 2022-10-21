@@ -33,7 +33,6 @@ def _get_session():
         raise RuntimeError("Couldn't get your Streamlit Session object.")
     return str(session)[50:64]
 
-
 def completion(prompt, engine_id="code-davinci-002", debug=False, **kwargs):
 
     COMPLETION_ENDPOINT = (
@@ -49,10 +48,11 @@ def completion(prompt, engine_id="code-davinci-002", debug=False, **kwargs):
     
     # Pass a uniqueID for every user w/ each API call (both for Completion & the Content Filter) e.g. user= $uniqueID. 
     # This 'user' param can be passed in the request body along with other params such as prompt, max_tokens etc.
-    uniqueID = _get_session()
-
-    data = {"prompt": prompt, "max_tokens": 200, "temperature": 0, "stop": ["# 4."], "user": uniqueID}
-
+    # uniqueID = _get_session()
+    
+    #data = {"prompt": prompt, "max_tokens": 200, "temperature": 0, "stop": ["# 4."],"user": uniqueID}
+    data = {"prompt": prompt, "max_tokens": 200, "temperature": 0, "stop": ["# 4."]}
+    
     data.update(kwargs)
 
     response = requests.post(
@@ -61,6 +61,8 @@ def completion(prompt, engine_id="code-davinci-002", debug=False, **kwargs):
     result = response.json()
 
     if debug:
+        print("COMPLETION_ENDPOINT:")
+        print(json.dumps(COMPLETION_ENDPOINT, indent=4))
         print("Headers:")
         print(json.dumps(headers, indent=4))
         print("Data:")
@@ -99,7 +101,6 @@ def execute(data, text, datapath):
     code = res
 
     process = Popen(
-        # "python "+scriptpath,
         f"{sys.executable} " + scriptpath,
         shell=True,
         stdout=PIPE,

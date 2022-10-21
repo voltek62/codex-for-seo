@@ -30,7 +30,7 @@ def openai_call(prompt: str, stop: str = None) -> str:
     """
     # Pass a uniqueID for every user w/ each API call (both for Completion & the Content Filter) e.g. user= $uniqueID. 
     # This 'user' param can be passed in the request body along with other params such as prompt, max_tokens etc.
-    uniqueID = _get_session()
+    #uniqueID = _get_session()
     
     kwargs = {
         "engine": "code-davinci-002",
@@ -40,8 +40,8 @@ def openai_call(prompt: str, stop: str = None) -> str:
         "top_p": 1,
         "frequency_penalty": 0,
         "presence_penalty": 0,
-        "best_of": 1,
-        "user": uniqueID,
+        "best_of": 1
+        #"user": uniqueID,
     }
     if stop:
         kwargs["stop"] = stop

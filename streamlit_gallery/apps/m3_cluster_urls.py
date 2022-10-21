@@ -52,7 +52,11 @@ def completion(prompt, engine_id="code-davinci-002", debug=False, **kwargs):
     # This 'user' param can be passed in the request body along with other params such as prompt, max_tokens etc.
     uniqueID = _get_session()    
 
-    data = {"prompt": prompt, "max_tokens": 800, "temperature": 0, "user": uniqueID}
+    data = {"prompt": prompt, 
+		"max_tokens": 800, 
+		"temperature": 0
+		#"user": uniqueID,
+		}
 
     data.update(kwargs)
 
