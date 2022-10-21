@@ -1,12 +1,12 @@
 ## Welcome to our `Codex for SEO` Gallery!
 
 ### 2 authors
-Charly Wargnier : https://twitter.com/DataChaz
-Vincent Terrasi : https://twitter.com/VincentTerrasi
+- Charly Wargnier : https://twitter.com/DataChaz
+- Vincent Terrasi : https://twitter.com/VincentTerrasi
 
 ### First, you need 
-API Key from OPENAI : https://beta.openai.com/account/api-keys
-Access to code-davinci
+- API Key from OPENAI : https://beta.openai.com/account/api-keys
+- Access to code-davinci
 
 ### How to run
 
