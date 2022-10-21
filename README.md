@@ -11,12 +11,19 @@
 ### How to run
 
 1. Install streamlit
-2. Run streamlit
+2. Install libs
+3. Run streamlit
 
 ## Install streamlit
 
 ```bash
 pip install streamlit
+```
+
+## Install required libraries
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Run streamlit
