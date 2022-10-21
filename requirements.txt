@@ -1,0 +1,21 @@
+# Dependencies
+# numpy
+# requests
+
+# Core
+streamlit
+
+# Utils
+openai
+transformers
+keybert
+plotly
+
+protobuf==3.19.1
+tensorflow
+causalimpact
+# fbprophet
+torch
+# pystan==2.19.1.1
+
+
