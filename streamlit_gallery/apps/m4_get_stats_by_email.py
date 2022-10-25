@@ -68,7 +68,7 @@ def completion(prompt, engine_id="code-davinci-002", debug=False, **kwargs):
     #uniqueID = _get_session()    
 
     data = {"prompt": prompt, 
-    "max_tokens": 400, 
+    "max_tokens": 600, 
     "temperature": 0
     #"user": uniqueID
     }
