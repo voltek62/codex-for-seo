@@ -5,8 +5,8 @@
 .idea/*
 
 # no temp files
-scripts/*
-temp/*
+#scripts/*
+#temp/*
 
 # Visual Studio Code
 .vscode/*
