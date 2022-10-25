@@ -128,7 +128,7 @@ def main():
     if not new_password:
         st.warning("Please type your password!")
         st.stop()
-    elif "SMX" in new_password:
+    elif "M4S4SLACK" in new_password:
         text_input_container.empty()
     else:
         st.warning("🚨 Nope, this password doesn't work")
