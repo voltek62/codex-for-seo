@@ -1,5 +1,8 @@
 ## Welcome to our `Codex for SEO` Gallery!
 
+- You can test here : https://codex-for-seo.streamlitapp.com/
+- La formation en Français : https://www.datamarketinglabs.com/data-science-seo-sans-savoir-coder
+
 ### 2 authors
 - Charly Wargnier : https://twitter.com/DataChaz
 - Vincent Terrasi : https://twitter.com/VincentTerrasi
